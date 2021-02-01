@@ -1,7 +1,3 @@
-# Alina Tariq
-# 500989574
-# Section 7
-
 def bubblesort(unsorted):
     # goes through entire array
     for a in range(len(unsorted)):
@@ -30,4 +26,3 @@ b_sort2 = bubblesort(unsort2)
 # prints results
 print('Bubble Sorted List 1: ', b_sort1)
 print('Bubble Sorted List 2: ', b_sort2)
-

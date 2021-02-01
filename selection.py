@@ -1,7 +1,3 @@
-# Alina Tariq
-# 500989574
-# Section 7
-
 def selectionsort(unsorted):
     # goes through each index to find the corresponding highest number
     for a in range(len(unsorted)):

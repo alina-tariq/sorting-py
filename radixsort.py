@@ -1,7 +1,3 @@
-# Alina Tariq
-# 500989574
-# Section 7
-
 def radixHelper(matrix, a):
     size = len(matrix)
     matsort = [[0] * 10] * size
@@ -9,16 +5,16 @@ def radixHelper(matrix, a):
 
     for i in range(size):
         count[int(matrix[i][a])] += 1
-    
+
     for i in range(1, 10):
         count[i] += count[i-1]
-    
+
     i = size - 1
     while i >= 0:
         matsort[count[int(matrix[i][a])] - 1] = matrix[i]
         count[int(matrix[i][a])] -= 1
         i -= 1
-    
+
     for i in range(size):
         matrix[i] = matsort[i]
 

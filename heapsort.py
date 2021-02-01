@@ -1,9 +1,5 @@
-# Alina Tariq
-# 500989574
-# Section 7
-
 def heapify(arr, max_i, i):
-    largest = i # parent node 
+    largest = i # parent node
     l_child = i * 2 + 1 # left child
     r_child = i * 2 + 2 # right child
 
@@ -24,13 +20,13 @@ def heapsort(arr):
     max_i = len(arr)
 
     # creates a max heap
-    for i in range(max_i//2, -1, -1): 
-        heapify(arr, max_i, i)       
+    for i in range(max_i//2, -1, -1):
+        heapify(arr, max_i, i)
 
     for j in range(max_i-1, 0, -1):
         # swaps first and last node
         arr[0], arr[j] = arr[j], arr[0]
-        # builds max heap with all elements except last 
+        # builds max heap with all elements except last
         heapify(arr, j, 0)
 
 str = input("Please enter string to be sorted: ")

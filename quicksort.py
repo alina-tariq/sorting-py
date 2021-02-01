@@ -1,19 +1,15 @@
-# Alina Tariq
-# 500989574
-# Section 7
-
 def partition(arr, min, max):
     pivot = arr[max] # last element is the pivot
     i = min - 1
 
     for a in range(min, max):
-        # array elements smaller of equal to pivot are kept to the left 
+        # array elements smaller of equal to pivot are kept to the left
         if arr[a] <= pivot:
             # tracks position of the last checked element smaller than pivot
-            i += 1 
+            i += 1
             # moves current element to the right of last element smaller than pivot
             arr[i], arr[a] = arr[a], arr[i]
-    
+
     # swaps pivot with the element to the right of the last element smaller than pivot
     arr[i+1], arr[max] = arr[max], arr[i+1]
 
